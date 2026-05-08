@@ -1,0 +1,30 @@
+# WeGame Rocom API 配置文件模板
+# 复制此文件为 config.yaml 并填入你的实际信息
+
+api:
+  base_url: "https://wegame.shallow.ink"
+  api_key: "你的API-Key"      # 必填：从服务提供方获取
+  timeout: 15
+
+login:
+  provider: "rocom"
+  client_type: "bot"
+  client_id: "astrbot"
+  user_identifier: ""
+
+merchant:
+  refresh: false
+  watched_items:
+    - "国王球"
+    - "棱镜球"
+    - "炫彩精灵蛋"
+
+email:
+  smtp_host: "smtp.qq.com"
+  smtp_port: 465
+  sender: "你的QQ邮箱@foxmail.com"
+  password: "你的QQ邮箱SMTP授权码"   # 非 QQ 密码，在 QQ 邮箱设置中生成
+  recipients:
+    - "收件人@qq.com"
+  alert_recipients:
+    - "告警收件人@foxmail.com"

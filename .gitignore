@@ -1,0 +1,17 @@
+# 配置文件（含 API Key、邮箱授权码等敏感信息，切勿提交）
+config.yaml
+
+# Python 运行时
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# IDE
+.idea/
+
+# 运行时生成文件
+token.json
+qrcode.png
+merchant.log
+.merchant_last_hash
