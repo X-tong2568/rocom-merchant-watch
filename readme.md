@@ -8,6 +8,15 @@
 - **原始项目**：[astrbot_plugin_rocom](https://github.com/Entropy-Increase-Team/astrbot_plugin_rocom) by **bvzrays & 熵增项目组**（洛克王国数据查询 AstrBot 插件 v3.0.0）
 - 本项目提取了原插件中的远行商人查询逻辑，独立为可定时运行的监控脚本，并扩展了邮件告警功能
 
+## 贡献说明
+
+本项目由 **X-tong2568** 与 **Claude (Anthropic)** 协作完成。
+
+| 贡献者 | 内容 |
+|--------|------|
+| X-tong2568 | 项目需求、配置提供、测试验证、发布维护 |
+| Claude | 查询失败告警功能（`send_alert_email` + merchant 错误分支集成）、`config.example.yaml` 模板、`.gitignore`、`readme.md`、LICENSE 添加、代码审查
+
 ## 数据接口
 
 | 项目 | 说明 |
