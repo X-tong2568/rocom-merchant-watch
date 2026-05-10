@@ -38,6 +38,7 @@ CHECK_MINUTE = 1
 RESET = "\033[0m"
 BOLD = "\033[1m"
 DIM = "\033[2m"
+RED = "\033[31m"
 GREEN = "\033[32m"
 YELLOW = "\033[33m"
 MAGENTA = "\033[35m"

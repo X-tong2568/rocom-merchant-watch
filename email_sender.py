@@ -35,8 +35,7 @@ def _build_html_body(products: List[dict], matched: List[str]) -> str:
                 if pid: parts.append(f"ID: {pid}")
                 if fname: parts.append(f"形态: {fname}")
                 extra = f"<br><span style='font-size:11px;color:#999;'>{' / '.join(parts)}</span>"
-        type_badge = f"<span style='background:#e8f5e9;color:#2e7d32;padding:2px 6px;border-radius:3px;font-size:11px;'>{ptype}</span>" if ptype == "精灵" else f"<span style='background:#e3f2fd;color:#1565c0;padding:2px 6px;border-radius:3px;font-size:11px;'>{ptype}</span>"
-        rows += f"<tr><td style='padding:8px 12px;border-bottom:1px solid #eee;'>{name}{extra}</td><td style='padding:8px 12px;border-bottom:1px solid #eee;'>{type_badge}</td><td style='padding:8px 12px;border-bottom:1px solid #eee;color:#888;'>{time_label}</td></tr>"
+        rows += f"<tr><td style='padding:8px 12px;border-bottom:1px solid #eee;'>{name}{extra}</td><td style='padding:8px 12px;border-bottom:1px solid #eee;color:#888;'>{time_label}</td></tr>"
 
     matched_block = ""
     if matched:
@@ -55,7 +54,6 @@ def _build_html_body(products: List[dict], matched: List[str]) -> str:
       <table style='width:100%;border-collapse:collapse;margin-top:8px;'>
         <thead><tr style='background:#f5f5f5;'>
           <th style='padding:10px 12px;text-align:left;border-bottom:2px solid #ddd;'>商品名称</th>
-          <th style='padding:10px 12px;text-align:left;border-bottom:2px solid #ddd;'>类型</th>
           <th style='padding:10px 12px;text-align:left;border-bottom:2px solid #ddd;'>时间段</th>
         </tr></thead>
         <tbody>{rows}</tbody>
